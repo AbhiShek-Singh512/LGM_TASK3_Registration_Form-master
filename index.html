@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer> </script>
+    <title>Student Profile System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Student Profile System</h1>
+    <div class="container center">
+        <table>
+            <tr>
+                <td>
+                    <form class="input-part" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label>Full Name*:</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                            <input placeholder="what should we call you?" required type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>City:</label>
+                            <input placeholder="you from ?" required type="text" name="city" id="city">
+                        </div>
+                        <div>
+                            <label>Mobile No:</label>
+                            <input placeholder="Give your phone number" required type="number" name="mobile" id="mobile">
+                        </div>
+                        <div>
+                            <label>Email Id:</label>
+                            <input placeholder="Let us know how to contact you" required type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>Dob:</label>
+                            <input required type="date" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>Gender(Male/Female/Other):</label>
+                           <input required type="text" placeholder="How should we address you" name="gender" id="gender">
+                           
+
+                        </div>
+                        <div>
+                            <label>Course:</label>
+                            <input placeholder="Provide your course details" required type="text" name="course" id="course">
+                        </div>
+                        <div class="mybuttons">
+                            <input required type="submit" value="REGISTER">
+                            <input required type="reset" value="CLEAR">
+                        </div>    
+                    </form>
+
+                
+                </td>
+            </tr>
+            <td>
+               
+                <table class="list" id="studentList">
+                 <thead>
+                        <h2 text-align="center">Registered Students👇</h2>
+                    <tr>
+                        <th>Full Name </th>
+                        <th>City </th>
+                        <th>Mobile No </th>
+                        <th>Email Id </th>
+                        <th>Dob </th>
+                        <th>Gender </th>
+                        <th>Course </th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </td>
+        </table>
+    </div>
+    
+    <footer class="socialMedia">
+        <p>Ⓒ<span id="mydate">mydate</span>STUDENTREGISTER PVT. LTD.</p>
+    </footer>
+</body>
+</html>
